@@ -3,6 +3,8 @@ let currentMonth = today.getMonth();
 let currentYear = today.getFullYear();
 let months = ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"];
 let days = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt'];
+let font_type = ['fa-check', 'fa-percent', 'fa-cog', 'fa-exclamation', 'fa-times'];
+let font_color = ['#00c851','#00c851','#ffb54c','#ffb54c', '#ff4444' ];
 fullYear(currentMonth,currentYear);
 function fullYear(month,year) {
     for (let i = 0; i < months.length; i++) {
@@ -26,6 +28,7 @@ function showCalendar(month, year) {
         let br = document.createElement("br");
         let cellText = document.createTextNode(days[(firstDay+j)%7]);
         let font = document.createElement("i");
+        let i = Math.floor(Math.random() * 5);
         font.style.color="#00c851";
         font.classList.add("fa");
         font.classList.add("fa-check");
