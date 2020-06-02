@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<div class="container col-md-12">
+    <div class="card">
+        <h3 class="card-header"></h3>
+        <table class="table-bordered table-responsive-xl" id="calendar">
+            <thead style="background-color: #003070">
+            <tr style="border: none!important;">
+                <td colspan="32">
+                    <div style="float: right;margin-right: 2%;color: antiquewhite;font-size: small">
+                        <input type="checkbox" checked><span> Pzt</span> &nbsp;
+                        <input type="checkbox" checked><span> Sal</span> &nbsp;
+                        <input type="checkbox" checked><span> Çar</span> &nbsp;
+                        <input type="checkbox" checked><span> Per</span> &nbsp;
+                        <input type="checkbox" checked><span> Cum</span> &nbsp;
+                        <input type="checkbox" checked><span> Cmt</span> &nbsp;
+                        <input type="checkbox" checked><span> Paz</span> &nbsp;
+                    </div>
+                </td>
+            </tr>
+            <tr style="border: none!important;">
+                <td colspan="32"
+                    style="margin-right: 2%;color: antiquewhite;font-size: small;background-color: #0e47a1">
+                    Simge Anlamları :
+                    <i class="fa fa-times" aria-hidden="true" style="color: #ff4444"></i> : Hata |
+                    <i class="fa fa-exclamation" aria-hidden="true" style="color: #ffb54c"></i> : Uyarı |
+                    <i class="fa fa-cog" aria-hidden="true" style="color: #ffb54c"></i> : Özel Koşullandırma |
+                    <i class="fa fa-percent" aria-hidden="true" style="color: #00c851"></i> : Özel İndirim |
+                    <i class="fa fa-check" aria-hidden="true" style="color: #00c851"></i> : Başarılı
+                </td>
+            </tr>
+            <tr style="margin-top: 5px;color: black;font-size: small;background-color: #f3f2f7" align="center">
+                <th><i class="fa fa-calendar" aria-hidden="true"></i></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+                <th>18</th>
+                <th>19</th>
+                <th>20</th>
+                <th>21</th>
+                <th>22</th>
+                <th>23</th>
+                <th>24</th>
+                <th>25</th>
+                <th>26</th>
+                <th>27</th>
+                <th>28</th>
+                <th>29</th>
+                <th>30</th>
+                <th>31</th>
+            </tr>
+            </thead>
+            <tbody  id="calendar-body" style="font-size: small;font-style: italic" align="center">
+            </tbody>
+        </table>
+        <br/>
+
+    </div>
+</div>
+<!--<button name="jump" onclick="jump()">Go</button>-->
+<script src="scripts.js"></script>
+
+<!-- Optional JavaScript for bootstrap -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
